@@ -56,12 +56,12 @@ Here is an example of a simple MySQL configuration file.
 
 ### URL
 
-You can also pass the MySQL credentials as a URL.
+You can also pass the MySQL credentials as a URL. MySQL's default port is set to 3306. If you've configured MySQL to use a different port, change the port in your connection string accordingly.
 
 `Config/mysql.json`
 ```json
 {
-    "url": "http://root:password@127.0.0.1/hello"
+    "url": "http://root:password@127.0.0.1:3306/hello"
 }
 ```
 
