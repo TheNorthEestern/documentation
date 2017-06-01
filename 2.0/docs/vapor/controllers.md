@@ -109,7 +109,7 @@ Conforming `UserController` to `ResourceRepresentable` requires that the signatu
 Here is a peek into the `Resource` class.
 
 ```swift
-final class Resource<Model: StringInitializable> {
+final class Resource<Model: Parameterizable> {
     typealias Multiple = (Request) throws -> ResponseRepresentable
     typealias Item = (Request, Model) throws -> ResponseRepresentable
 
